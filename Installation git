@@ -1,0 +1,10 @@
+#Installer git sur debian/linux
+
+su (ou sudo)
+apt-get install git
+git config --global user.name "pseudo"
+git config --global user.email "email"
+
+#sortir de là (exit) pour véridier la bonne installation
+git
+#si explications alors ca à marcher

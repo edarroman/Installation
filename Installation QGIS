@@ -1,0 +1,29 @@
+#Installation de QGIS sur Debian
+#04 Octobre 2016
+
+##Changement des sources
+su
+nano /etc/apt/sources.list
+#A écrire dans sources.list
+deb http://httpredir.debian.org/debian jessie main
+deb-src http://httpredir.debian.org/debian jessie main
+
+deb http://httpredir.debian.org/debian jessie-updates main
+deb-src http://httpredir.debian.org/debian jessie-updates main
+
+deb http://security.debian.org/ jessie/updates main
+deb-src http://security.debian.org/ jessie/updates main
+
+deb     http://qgis.org/debian jessie main
+deb-src http://qgis.org/debian jessie main
+
+##si problème de proxy
+export http_proxy='https://adresseproxy'
+export https_proxy='https://adresseproxy'
+
+##qgis
+apt-get update
+apt-get install qgis
+
+
+
