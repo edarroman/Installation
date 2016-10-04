@@ -1,6 +1,7 @@
 # Installation
 
 
-#sur Debian
-#Installation de Qgis
-#Installation de git
+sur Debian
+
+Installation de Qgis
+Installation de git
